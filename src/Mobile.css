@@ -96,6 +96,11 @@
         height: 80px !important;
     }
 
+    /* AboutMe 浮動 icon - 手機版隱藏 */
+    .about-floating-icons {
+        display: none;
+    }
+
     /* Plans 區塊 */
     .plans-tabs {
         flex-direction: column;

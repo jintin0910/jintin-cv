@@ -94,6 +94,7 @@ function AboutMe() {
                     {features.map((feature, index) => (
                         <div
                             key={index}
+                            className="about-floating-icons"
                             style={{
                                 position: 'absolute',
                                 ...positions[index],
