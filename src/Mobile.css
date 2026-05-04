@@ -98,7 +98,7 @@
 
     /* AboutMe 浮動 icon - 手機版隱藏 */
     .about-floating-icons {
-        display: none;
+        display: none !important;
     }
 
     /* Plans 區塊 */
