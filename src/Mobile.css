@@ -81,19 +81,21 @@
         font-size: 1.1rem;
     }
 
-    /* Future 區塊 - 2x2 網格 */
+    /* Future 區塊 - 垂直單欄 */
     .future-grid {
-        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        align-items: center;
     }
 
     .future-grid .card {
-        flex: 1 1 45% !important;
-        min-width: 140px !important;
+        flex: none !important;
+        width: 100% !important;
+        max-width: 320px;
     }
 
     .future-grid .card img {
-        width: 80px !important;
-        height: 80px !important;
+        width: 100px !important;
+        height: 100px !important;
     }
 
     /* AboutMe 浮動 icon - 手機版隱藏 */

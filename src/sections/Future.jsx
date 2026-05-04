@@ -33,10 +33,10 @@ function Future() {
                 帶著熱情與決心，迎接即將到來的挑戰與機遇。
             </p>
 
-            <div style={{
+            <div className="future-grid" style={{
                 display: 'flex',
                 justifyContent: 'center',
-                flexWrap: 'nowrap'
+                flexWrap: 'wrap'
             }}>
                 {expectations.map((item, index) => (
                     <div className="card" key={index} style={{ flex: '1', minWidth: '0', textAlign: 'center', background: 'transparent', boxShadow: 'none' }}>
