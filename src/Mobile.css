@@ -113,6 +113,25 @@
         min-height: auto;
         padding: 1rem;
     }
+
+    /* Plans 頁籤 - 橫向可捲動 */
+    .plans-tabs-scroll {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap !important;
+        padding-bottom: 4px;
+    }
+
+    .plans-tabs-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Plans 內容區背景裝飾 icon 縮小 */
+    .plans-content-bg-icon {
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 
 /* ===== 小型手機 (480px 以下) ===== */
