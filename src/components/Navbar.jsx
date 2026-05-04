@@ -55,7 +55,8 @@ function Navbar({ activeSection, onNavigate }) {
                         <button
                             className="hamburger-btn"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            aria-label="開啟選單"
+                            aria-label={isMenuOpen ? '關閉選單' : '開啟選單'}
+                            aria-expanded={isMenuOpen}
                         >
                             {isMenuOpen ? '✕' : '☰'}
                         </button>

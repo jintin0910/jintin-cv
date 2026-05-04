@@ -1035,3 +1035,9 @@ body>* {
         display: flex;
     }
 }
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+}
