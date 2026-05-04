@@ -161,7 +161,7 @@ function Plans() {
 
             <div style={folderContainerStyle}>
                 {/* 上方頁籤 */}
-                <div style={tabsContainerStyle}>
+                <div className="plans-tabs-scroll" style={tabsContainerStyle}>
                     {indicators.map((indicator, index) => (
                         <div
                             key={index}
@@ -179,6 +179,7 @@ function Plans() {
                     <img
                         src={indicators[activeIndex].icon}
                         alt=""
+                        className="plans-content-bg-icon"
                         style={{
                             position: 'absolute',
                             bottom: '20px',

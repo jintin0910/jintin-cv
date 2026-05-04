@@ -1,3 +1,9 @@
+/* 全域防溢出 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ===== 手機版響應式樣式 ===== */
 /* 適用於 768px 以下螢幕 */
 
@@ -81,19 +87,26 @@
         font-size: 1.1rem;
     }
 
-    /* Future 區塊 - 2x2 網格 */
+    /* Future 區塊 - 垂直單欄 */
     .future-grid {
-        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        align-items: center;
     }
 
     .future-grid .card {
-        flex: 1 1 45% !important;
-        min-width: 140px !important;
+        flex: none !important;
+        width: 100% !important;
+        max-width: 320px;
     }
 
     .future-grid .card img {
-        width: 80px !important;
-        height: 80px !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    /* AboutMe 浮動 icon - 手機版隱藏 */
+    .about-floating-icons {
+        display: none !important;
     }
 
     /* Plans 區塊 */
@@ -105,6 +118,25 @@
     .plans-content {
         min-height: auto;
         padding: 1rem;
+    }
+
+    /* Plans 頁籤 - 橫向可捲動 */
+    .plans-tabs-scroll {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap !important;
+        padding-bottom: 4px;
+    }
+
+    .plans-tabs-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Plans 內容區背景裝飾 icon 縮小 */
+    .plans-content-bg-icon {
+        width: 100px !important;
+        height: 100px !important;
     }
 }
 
